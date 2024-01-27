@@ -1,0 +1,95 @@
+@media screen and (max-width: 1000px) {
+    p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .grid-3{
+        gap: 1rem;
+    }
+    .skills-right ul li{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 825px) {
+    /*burger*/
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .toggle-burger .baris-1{
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+    .toggle-burger .baris-2{
+        opacity: 0;
+    }
+    .toggle-burger .baris-3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    /*navigasi*/
+    nav{
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: gainsboro;
+        border-left: 1px solid gray;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: .2s ease-in-out;
+    }
+    nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-active{
+        transform: translateX(0);
+    }
+    :root{
+        padding: 4rem 0;
+    }
+    .section-title{
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+    }
+    .pretitle{
+        font-size: 0.8rem;
+    }
+    /*Hero*/
+    #hero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .hero-right img{
+        margin-left: 0;
+    }
+    .hero-left{
+        text-align: center;
+    }
+    .hero-left .pretitle{
+        margin: 0 auto;
+    }
+    .hero-name{
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+    }
+    /*Skiils*/
+    .skills-grid{
+        gap: 1rem;
+    }
+    /*Footer*/
+    
+    
+}
+@media screen and (max-width: 640px) {
+    /*Titles*/
+    .section-title{
+        font-size: 1.3rem;
+    }
+    .pretitle{
+        font-size: 0.7rem;
+    }
+}
